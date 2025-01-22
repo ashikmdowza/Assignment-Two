@@ -19,6 +19,7 @@
     align-items: center;
     
 }
+
   .header{
     max-width: 1160px;
     margin: 0 auto;
@@ -34,6 +35,21 @@
   a {
     text-decoration: none;
   }
+  .horizontal-line ,.menu-toggle{
+    display: none;
+  }
+  .menu-icon  {
+    display: none;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    
+  
+  }
+  
+
   .first-btn{
     color: white;
     background-color:orange;
@@ -47,7 +63,10 @@
 
     
   }
+
+
   /* responsive for navbar */
+
   
 /* Hero section */
   .hero{
@@ -91,13 +110,19 @@
     text-align: center;
     margin-bottom: 80px;
   }
+
+
   .cards{
-    display: flex;
+    
     max-width: 1160px;
     margin: 0 auto;
-    gap:28px;
 
   }
+  .curriculum-card-container{
+    display: flex;
+    gap: 24px;
+  }
+
   .card-1{
     border-radius: 18.86px;
     box-shadow: 0 6px 50px 0px rgb(218, 211, 211);
@@ -255,6 +280,12 @@ text-align: center;
     margin-left: 40px;
     position: relative;
   }
+  .date-Color-2{
+    background-color: #5D58F0;
+  }
+  .date-Color-3{
+    background-color: #95B226;
+  }
   
   
   
@@ -336,5 +367,104 @@ text-align: center;
   margin: 3px;
 }
 
+
+
+/* responsive part */
+
+
+@media screen and (max-width: 576px) {
+
+  .menu-icon , .horizontal-line {
+    display: block;
+  }
+
+  .horizontal-line{
+    margin-top: 15px;
+    border: 1px solid orange;
+  }
+
+
+  .nav-titles,
+  .first-btn,
+  .logo-title,
+  .arrow {
+    display: none;
+  }
+  .hero img{
+    width: 90%;
+    height: auto;
+  }
+  .hero1{
+    margin-top: 10px;
+  }
+  .hero h3{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .school h3{
+    display: none;
+  }
+
+  #card-large {
+    display: none;
+  }
+
+  .logo-title img {
+    margin-left: 20px;
+  }
+
+
+  
+
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero img {
+    padding: 20px;
+  }
+
+
+
+  
+  .curriculum-card-container , .footer-container {
+    flex-direction: column;
+  }
+
+  .card-1, .card-2, .card-3 {
+    max-width: 90%;
+    min-height: 200px;
+    margin: 10px;
+  }
+
+  
+
+ 
+
+
+  
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+ 
+
+
+}
 
   
