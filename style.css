@@ -43,7 +43,12 @@
     margin-top: 26px;
     margin-bottom: 26px;
     font-weight: bold;
+
+
+    
   }
+  /* responsive for navbar */
+  
 /* Hero section */
   .hero{
     display: flex;
@@ -145,6 +150,41 @@
     font-weight: bold;
     mar
   }
+  /* arrow */
+  .arrow{
+text-align: center;  
+}
+  .arrow-btn{
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    margin-top: 60px;
+    padding: 15px 17px;
+    cursor: pointer;
+  }
+  .arrow-btn:hover{
+    background-color: rgb(14, 13, 13);
+  }
+  
+  .arrow-left{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  
+  }
+  
+  .arrow-right{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  
+  }
   /* our story */
 
 .stories-section{
@@ -234,5 +274,67 @@
   .view-all:hover {
     background: #333;
   }
+
+  /* Footer */
+ 
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+.footer-left{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.footer-logo-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.footer-logo-title h4{
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1;
+}
+.footer-left p{
+  margin-top: 0px;
+  color: #eaeaea;
+}
+
+.footer-middle{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.footer-middle h4{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer-middle li{
+  list-style: none;
+  margin-top: 15px;
+}
+.footer-middle li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: .9rem;
+}
+
+.footer-right{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.footer-right h4{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer-right a{
+  margin: 3px;
+}
+
 
   
